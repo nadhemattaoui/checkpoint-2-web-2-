@@ -1,0 +1,23 @@
+ALGORITHM task1
+FUNCTION dot_product (V1:array of FLOAT[2], V2:array of FLOAT[2]) : FLOAT.
+VAR
+ ps:FLOAT
+    
+BEGIN
+    ps=v1[1]*V2[1]+ v1[2]*V2[2];
+    RETURN ps ;
+END
+
+VAR
+array_name : ARRAY_OF array[2]:[N];
+
+BEGIN
+ FOR i FROM 1 TO N DO
+ For j FROM 2 TO N DO 
+ IF dot_product( tab[i],tab[j]) = 0 THEN
+ write(" les vecteurs sont orthogonaux")
+ END_IF
+END FOR
+END FOR
+
+
